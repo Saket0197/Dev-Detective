@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', sans-serif;
+    color: var(--lm-text);
+}
+
+:root {
+    --lm-bg: #f6f8ff;
+    --lm-bg-content: #fefefe;
+    --lm-text: #4b6a9b;
+    --lm-text-alt: #2b3442;
+    --lm-shadow: rgba(70, 96, 187, 0.2); /* OR rgba(70,88,109,0.25)*/
+    --lm-icon-bg: brightness(100%);
+    --github-link-text: #0079ff;
+}
+
+.wrapper {
+    min-height: 100vh;
+    height: fit-content;
+    width: 100%;
+    padding-top: 1rem;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lm-bg);
+}
+
+.container {
+    min-height: 85%;
+    height: fit-content;
+    width: 45%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.main-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.main-heading{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.mode{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.icon{
+    height: 0.95rem;
+    width: 0.95rem;
+    cursor: pointer;
+}
+
+.search-container{
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 16px 30px -10px var(--lm-shadow);
+    padding: 0 1rem;
+    border-radius: 1rem;
+    background-color: var(--lm-bg-content);
+}
+
+.search-container > input {
+    background-image: url('./Assets/search-icon.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1.25rem 1.25rem;
+    flex-grow: 1;
+    padding: 1rem 2rem;
+    border: none;
+    height: 100%;
+}
+
+.search-container > input:focus{
+    outline: none;
+}
+
+.search-btn{
+    height: 70%;
+    width: 20%;
+    cursor: pointer;
+    background-color: #0079ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.75rem;
+}
+
+.search-btn:hover{
+    background-color: #60abff;
+}
+
+.profile-container{
+    margin-top: 1.75rem;
+    box-shadow: 0px 16px 30px -10px var(--lm-shadow);
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: var(--lm-bg-content);
+}
+
+.profile-header{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+    gap: 1rem;
+}
+
+.profile-image{
+    height: 5.5rem;
+    width: 5.5rem;
+    border: 1px solid rgba(219, 213, 213, 0.671);
+    border-radius: 50%;
+}
+
+.user-info-wrapper{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.bio{
+    width: 60%;
+}
+
+.profile-content-container{
+    margin-left: 6.5rem;
+}
+
+.stats-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    text-align: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.profile-footer{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 2rem;
+}
+
+.location-info, .organization-info{
+    display: inline-block;
+}
+
+.user-name, .value{
+    color: var(--lm-text-alt);
+    font-weight: bold;
+}
+
+.user-github-link{
+    color: var(--github-link-text);
+}
+
+.profile-info{
+    filter: var(--lm-icon-bg);
+}
