@@ -120,6 +120,7 @@ function renderData(response) {
     profileImage.src = response?.avatar_url;
     toUserGithub.textContent = `@${response?.login}`;
     toUserGithub.href = response?.html_url;
+    toUserGithub.target = "_blank";
     userName.textContent = response?.name;
     userJoinDate.textContent = `Joined ${formatDate(response?.created_at)}`;
     userBio.textContent = response?.bio;
