@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Space Mono', sans-serif;
+    font-weight: bold;
     color: var(--lm-text);
 }
 
@@ -46,9 +47,9 @@
 }
 
 .container {
-    min-height: 85%;
+    min-height: 90%;
     height: fit-content;
-    width: 50%;
+    width: 55%;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -176,11 +177,12 @@
     gap: 0.5rem;
     flex-wrap: wrap;
     border-radius: 1rem;
+    margin-bottom: 1rem;
 }
 
 .profile-footer{
     display: flex;
-    padding: 1rem;
+    padding: 0.25rem;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: baseline;
@@ -206,4 +208,99 @@
 
 .active{
     visibility: visible;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .user-bio{
+        width: 75%;
+    }
+
+    .profile-footer{
+        max-width: 35rem;
+        width: fit-content;
+        margin-left: -5rem;
+        gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .container{
+        width: 60%;
+    }
+
+    .user-info-wrapper{
+        gap: 0.2rem;
+    }
+
+    .user-bio{
+        width: 85%;
+    }
+
+    .profile-footer{
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container{
+        width: 80%;
+    }
+
+    .user-info-wrapper{
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .profile-header{
+        margin-bottom: 1rem;
+    }
+
+    .profile-content-container{
+        margin-left: 1rem;
+    }
+
+   .user-bio{
+       width: 100%;
+   }
+
+   .profile-footer{
+       margin-left: initial;
+   }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    *{
+        font-size: 0.85rem;
+    }
+
+    .container{
+        width: 95%;
+    }
+
+    .search-container > input::placeholder{
+        font-size: 0.8rem;
+    }
+
+    .main-heading{
+        font-size: 0.9rem;
+    }
+
+    .profile-content-container{
+        padding-left: 1.5rem;
+    }
+
+    .stats-container{
+        padding: 0.5rem;
+    }
+
+    .profile-footer{
+        gap: 1.25rem;
+    }
+
 }
