@@ -28,12 +28,27 @@
     justify-content: center;
     align-items: center;
     background-color: var(--lm-bg);
+    position: relative;
+}
+
+.overlay{
+    inset: 0;
+    font-size: 4rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    color: red;
+    visibility: hidden;
+    background-color: rgba(99, 97, 97, 0.493);
 }
 
 .container {
     min-height: 85%;
     height: fit-content;
-    width: 45%;
+    width: 50%;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -55,6 +70,7 @@
     justify-content: space-between;
     align-items: baseline;
     gap: 1rem;
+    font-weight: bold;
 }
 
 .icon{
@@ -64,6 +80,7 @@
 }
 
 .search-container{
+    position: relative;
     height: 4rem;
     display: flex;
     justify-content: space-around;
@@ -76,6 +93,7 @@
 
 .search-container > input {
     background-image: url('./Assets/search-icon.svg');
+    background-color: transparent;
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 1.25rem 1.25rem;
@@ -83,6 +101,10 @@
     padding: 1rem 2rem;
     border: none;
     height: 100%;
+}
+
+.search-container > input::placeholder{
+    color: var(--lm-text);
 }
 
 .search-container > input:focus{
@@ -134,7 +156,11 @@
 }
 
 .bio{
-    width: 60%;
+    width: 100%;
+    padding-right: 2rem;
+    opacity: 0.7;
+    text-align: left;
+    margin-bottom: 1rem;
 }
 
 .profile-content-container{
@@ -142,12 +168,14 @@
 }
 
 .stats-container{
+    background-color: var(--lm-bg);
     display: flex;
     justify-content: space-around;
     padding: 1rem;
     text-align: center;
     gap: 0.5rem;
     flex-wrap: wrap;
+    border-radius: 1rem;
 }
 
 .profile-footer{
@@ -174,4 +202,8 @@
 
 .profile-info{
     filter: var(--lm-icon-bg);
+}
+
+.active{
+    visibility: visible;
 }
