@@ -11,6 +11,6 @@ Users can switch between light and dark modes, as per their preference.
 
 
 
-## 🛠 Skills implemented
-Javascript, HTML, CSS
+## 🛠 Tech Used
+**Languages:** Javascript, HTML, CSS
 
