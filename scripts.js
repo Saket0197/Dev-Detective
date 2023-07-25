@@ -133,8 +133,8 @@ function renderData(response) {
     }
     
     if(response?.blog) {
+		bioLink.href = response?.blog;
         bioLink.textContent = response?.blog;
-        bioLink.href = response?.blog;
         bioLink.target = '_blank';
     }
     
