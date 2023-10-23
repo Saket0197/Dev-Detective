@@ -1,7 +1,7 @@
 
 # Dev Detective
 
-Review Project at : https://saket0197.github.io/Dev-Detective/
+Review Project at : https://dev-detective-saket0197.vercel.app/
 
 - The project allows developers, or users to search github profiles of other developers by respective github user names.
 
